@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "category": "clothing",
+            "name": "T-shirt",
+            "price": 250,
+            "quantity": 3
+        },
+        {
+            "category": "clothing",
+            "name": "Dress",
+            "price": 500,
+            "quantity": 1
+        },
+        {
+            "category": "accessories",
+            "name": "Bag",
+            "price": 350,
+            "quantity": 2
+        },
+        {
+            "category": "electronics",
+            "name": "Watch",
+            "price": 1050,
+            "quantity": 1
+        }
+    ],
+    "discount": {
+        "coupon": {
+            "campaigns": "Fixed",
+            "parameters": 100
+        },
+        "onTop": {
+            "campaigns": "PercenByCate",
+            "parameters": {
+                "cate": "clothing",
+                "discount": 15,
+                "max": 20
+            }
+        },
+        "seasonal": {
+            "campaigns": "Special",
+            "parameters": {
+                "every": 300,
+                "discount": 40
+            }
+        }
+    }
+}
